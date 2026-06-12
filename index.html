@@ -395,6 +395,7 @@ nav {
   text-decoration: none;
   transition: gap 0.2s;
   width: fit-content;
+  cursor: pointer;
 }
 .service-link::after { content: '→'; }
 .service-link:hover { gap: 12px; }
@@ -532,7 +533,7 @@ footer small {
   <div class="hero-inner">
     <div class="hero-eyebrow">crecimiento personal · Astrología · Tarot · herramientas intuitivas</div>
     <h1 class="hero-title"><em>Viaja a tu interior:</em><br>tu camino,<br>tus respuestas.</h1>
-    <p class="hero-tagline">Acompaño procesos de autoconocimiento y crecimiento personal. Usando herramientas como el tarot y la astrología, te ayudo a verte con más claridad y a moverte desde un lugar más auténtico.</p>
+    <p class="hero-tagline">Acompaño procesos de autoconocimiento y crecimiento personal. Usando herramientas como el tarot y la astrología, te ayudo a verte con más claridad y a moverte desde[...]
     <div class="btn-row">
       <a href="#services" class="btn-primary">Ver servicios</a>
       <a href="#about"    class="btn-ghost">Conocerme</a>
@@ -565,10 +566,10 @@ footer small {
     <div class="about-text">
       <span class="eyebrow">acerca de mí</span>
       <h2 class="section-title">El trabajo es tuyo.<br>Yo <em>acompaño</em>.</h2>
-      <p class="about-body">Camino contigo en el proceso de conocerte mejor. Creo que cuando una persona se entiende a sí misma, sus decisiones cambian, su relación consigo misma cambia y su vida cambia.</p>
-      <p class="about-body">Trabajo con tarot y astrología como herramientas de reflexión, no como fines en sí mismos, sino como espejos que nos ayudan a ver lo que a veces no podemos por nuestra cuenta.</p>
+      <p class="about-body">Camino contigo en el proceso de conocerte mejor. Creo que cuando una persona se entiende a sí misma, sus decisiones cambian, su relación consigo misma cambia y su vi[...]
+      <p class="about-body">Trabajo con tarot y astrología como herramientas de reflexión, no como fines en sí mismos, sino como espejos que nos ayudan a ver lo que a veces no podemos por nues[...]
       <blockquote style="border-left:2px solid var(--verde);padding:14px 18px;margin:20px 0;border-radius:0 4px 4px 0;background:rgba(93,202,165,0.06);">
-        <p style="font-family:var(--font-display);font-size:17px;font-style:italic;font-weight:300;color:var(--indigo);line-height:1.65;margin-bottom:8px;">"Cuando somos capaces de conocernos a nosotros mismos, rara vez nos equivocamos sobre nuestro destino"</p>
+        <p style="font-family:var(--font-display);font-size:17px;font-style:italic;font-weight:300;color:var(--indigo);line-height:1.65;margin-bottom:8px;">"Cuando somos capaces de conocernos a n[...]
         <cite style="font-size:11px;font-weight:500;letter-spacing:0.08em;color:var(--verde);font-style:normal;">— Madame Satael</cite>
       </blockquote>
       <p class="about-body">Cada sesión es un espacio para ti, para explorar, cuestionar y reconectarte con tu propia sabiduría interior.</p>
@@ -605,7 +606,7 @@ footer small {
         </div>
         <div class="service-name">Carta Natal</div>
         <p class="service-desc">Interpretación de tu carta astral enfocada en el autoconocimiento. Un mapa de quién eres, cómo funcionas y qué viniste a aprender.</p>
-        <a href="#cta" class="service-link">Agendar sesión</a>
+        <a class="service-link" onclick="setSelectedService('Carta Natal')">Agendar sesión</a>
       </div>
 
       <div class="service-card">
@@ -615,7 +616,7 @@ footer small {
         </div>
         <div class="service-name">Lectura de Tarot</div>
         <p class="service-desc">Sesiones de 30 o 60 minutos para trabajar lo que necesitas ahora. El tarot como espejo de tu situación actual.</p>
-        <a href="#cta" class="service-link">Agendar sesión</a>
+        <a class="service-link" onclick="setSelectedService('Lectura de Tarot')">Agendar sesión</a>
       </div>
 
       <div class="service-card">
@@ -625,7 +626,7 @@ footer small {
         </div>
         <div class="service-name">Tarot + Carta Natal</div>
         <p class="service-desc">Lo mejor de los dos mundos en una hora: exploración básica de tu carta natal y una lectura de tarot para lo que necesite atención.</p>
-        <a href="#cta" class="service-link">Agendar sesión</a>
+        <a class="service-link" onclick="setSelectedService('Tarot + Carta Natal')">Agendar sesión</a>
       </div>
 
       <div class="service-card">
@@ -635,7 +636,7 @@ footer small {
         </div>
         <div class="service-name">Energía del Mes</div>
         <p class="service-desc">Lectura centrada en los tránsitos actuales usando tu carta natal. Entiende qué energías están activas en tu vida ahora mismo.</p>
-        <a href="#cta" class="service-link">Agendar sesión</a>
+        <a class="service-link" onclick="setSelectedService('Energía del Mes')">Agendar sesión</a>
       </div>
 
       <div class="service-card">
@@ -645,7 +646,7 @@ footer small {
         </div>
         <div class="service-name">Vocación y Trabajo</div>
         <p class="service-desc">Interpretación de tu carta natal enfocada en vocación, trabajo y rutinas. Descubre cómo tus planetas hablan de tu propósito profesional.</p>
-        <a href="#cta" class="service-link">Agendar sesión</a>
+        <a class="service-link" onclick="setSelectedService('Vocación y Trabajo')">Agendar sesión</a>
       </div>
 
       <div class="service-card">
@@ -655,7 +656,7 @@ footer small {
         </div>
         <div class="service-name">Vuelta al Sol</div>
         <p class="service-desc">Para tu cumpleaños o el de alguien especial. Exploramos el Sol natal y vemos en el tarot lo que necesita atención en este nuevo ciclo.</p>
-        <a href="#cta" class="service-link">Agendar sesión</a>
+        <a class="service-link" onclick="setSelectedService('Vuelta al Sol')">Agendar sesión</a>
       </div>
 
     </div>
@@ -669,8 +670,8 @@ footer small {
   <div class="cta-inner">
     <span class="eyebrow" style="color:var(--plata);">¿lista/o para empezar?</span>
     <h2 class="section-title" style="color:var(--luna);">Agendemos una <em style="color:var(--verde);">sesión</em></h2>
-    <p>Escríbeme y encontramos el espacio que mejor se adapta a lo que necesitas.</p>
-    <a href="https://wa.me/50240186192?text=Hola%20Ivonne%2C%20quiero%20una%20sesi%C3%B3n%20contigo" class="btn-primary" style="display:inline-block;">Escríbeme</a>
+    <p id="cta-message">Escríbeme y encontramos el espacio que mejor se adapta a lo que necesitas.</p>
+    <a id="whatsapp-link" href="https://wa.me/50240186192?text=Hola%20Ivonne%2C%20quiero%20una%20sesi%C3%B3n%20contigo" class="btn-primary" style="display:inline-block;">Escríbeme</a>
   </div>
 </section>
 
@@ -685,6 +686,27 @@ footer small {
 </footer>
 
 <script>
+  // Variable to store selected service
+  let selectedService = null;
+
+  // Function to set the selected service
+  function setSelectedService(serviceName) {
+    selectedService = serviceName;
+    
+    // Update the CTA message to show selected service
+    const ctaMessage = document.getElementById('cta-message');
+    ctaMessage.textContent = `Excelente! Has seleccionado "${serviceName}". Escríbeme y agendamos tu sesión.`;
+    
+    // Update the WhatsApp link with the service name
+    const whatsappLink = document.getElementById('whatsapp-link');
+    const encodedService = encodeURIComponent(serviceName);
+    whatsappLink.href = `https://wa.me/50240186192?text=Hola%20Ivonne%2C%20quiero%20una%20sesi%C3%B3n%20de%20${encodedService}`;
+    
+    // Scroll to CTA section
+    document.getElementById('cta').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Generate stars
   const container = document.getElementById('stars');
   for (let i = 0; i < 38; i++) {
     const s = document.createElement('div');
